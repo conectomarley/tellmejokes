@@ -12,7 +12,8 @@ function tellmejokes(response) {
 function generateJoke(event) {
   event.preventDefault();
   let apiKey = "3t4aaf46b1o5b1534f3e944eb00eb10d";
-  let context = "provide a short answer and make sure to pick one";
+  let context =
+    "provide a short answer, make sure to pick one and don't repeat a joke";
   let prompt = "tell me a good ethical joke";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
